@@ -1,0 +1,40 @@
+
+header{
+    width: 100%;
+    height: auto;
+    background-color: $bg-header;
+    justify-content: center;
+    z-index: 1;
+    top: 0;
+    .start-menu{
+       width: 1450px;
+       margin: 20px;
+       justify-content: space-between;
+       align-items: center;
+    }
+ }
+
+ .categoria .selezione{
+    margin: 0 10px;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+    &:hover{
+       text-decoration: underline;
+    }
+ }
+
+ .logo{
+    width: 200px;
+    &:hover{
+       cursor: pointer;
+    }
+ }
+
+ .icon-start-menu{
+    font-size: 24px;
+    margin: 0 8px;
+    &:hover{
+       color: darken($color: $prymary-text-color, $amount: 15%);
+    }
+ }
