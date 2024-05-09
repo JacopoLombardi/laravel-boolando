@@ -6,40 +6,44 @@
 
 <section class="flex">
 
+        @foreach ( $products_array as $product )
+            <div class="card">
+                <div class="card-inside">
 
-        <div class="card">
-            <div class="card-inside">
+                    <div class="upper  relative">
+                        
+                        {{-- img --}}
+                        <div>
+                            <img src="/img/{{$product['frontImage']}}" alt="brand">
+                        </div>
 
-                <div class="upper  relative">
-                    <div>
-                        <img src="/img/1.webp" alt="brand">
+                        {{-- heart --}}
+                        <div class="scatola-cuore absolute flex">
+                            <span class="cuore flex">
+                                &hearts;
+                            </span>
+                        </div>
+
+                        {{-- badges --}}
+                        <div class="sconto absolute">
+                            20%
+                        </div>
+
+                        <div class="sostenibile absolute">
+                            Sostenibile
+                        </div>
                     </div>
 
-                    <div class="scatola-cuore absolute flex">
-                        <span class="cuore flex">
-                            &hearts;
-                        </span>
+                    {{-- description --}}
+                    <div class="under">
+                        <p> {{ $product['brand'] }} </p>
+                        <h2> {{ $product['name'] }} </h2>
+                        <p class="price"> {{ $product['price'] }} &euro;</p>
                     </div>
 
-
-                    <div class="sconto absolute">
-                        20%
-                    </div>
-
-                    <div class="sostenibile absolute">
-                        Sostenibile
-                    </div>
                 </div>
-
-                <div class="under">
-                    <p>Levi's</p>
-                    <h2>Relaxed Fit</h2>
-                    <p class="price"> 29.99 &euro;</p>
-                </div>
-
             </div>
-        </div>
-
+        @endforeach
 
   </section>
 

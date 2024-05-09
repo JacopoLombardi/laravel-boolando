@@ -14,5 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+
+    $products_array = config('products');
+
+    return view('home', compact('products_array'));
 })->name('homepage');
