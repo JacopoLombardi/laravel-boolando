@@ -13,9 +13,39 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// HOME page
 Route::get('/', function () {
 
     $products_array = config('products');
 
     return view('home', compact('products_array'));
 })->name('homepage');
+
+
+
+
+//////////////////////////////////
+
+
+// account
+Route::get('/account', function () {
+
+    return view('account');
+})->name('accountpage');
+
+
+
+// preferiti
+Route::get('/favourites', function () {
+
+    return view('favourites');
+})->name('favouritespage');
+
+
+
+// carrello
+Route::get('/cart', function () {
+
+    return view('cart');
+})->name('cartpage');

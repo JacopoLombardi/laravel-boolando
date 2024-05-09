@@ -22,9 +22,9 @@
        <div>
           <ul class="flex">
              <li>
-                <a href="#"><i class="icon-start-menu  fa-regular  fa-user"></i></a>
-                <a href="#"><i class="icon-start-menu  fa-regular  fa-heart"></i></a>
-                <a href="#"><i class="icon-start-menu  fa-solid  fa-bag-shopping  icon-white"></i></a>
+                <a href="http://127.0.0.1:8000/account"><i class="icon-start-menu  fa-regular  fa-user"></i></a>
+                <a href="http://127.0.0.1:8000/favourites"><i class="icon-start-menu  fa-regular  fa-heart"></i></a>
+                <a href="http://127.0.0.1:8000/cart"><i class="icon-start-menu  fa-solid  fa-bag-shopping  icon-white"></i></a>
              </li>
           </ul>
        </div>
