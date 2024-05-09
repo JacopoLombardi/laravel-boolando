@@ -12,37 +12,22 @@
 
                 <div class="upper  relative">
                     <div>
-                        <img
-                            :class="x === true ? 'd-none' : ''"
-                            :src="imageShowed"
-                            :alt="brand">
-
-                        <img
-                            :class="x === true ? 'd-inline-block' : 'd-none'"
-                            :src="imageHidden"
-                            :alt="brand"
-                        >
+                        <img src="/img/1.webp" alt="brand">
                     </div>
 
                     <div class="scatola-cuore absolute flex">
-                        <span
-                            :class="{'red': isInFavorites === true}"
-                            class="cuore flex">
+                        <span class="cuore flex">
                             &hearts;
                         </span>
                     </div>
 
 
-                    <div
-                        :class="badgesRedValue === 'Sostenibilità' ? 'd-none' : ''"
-                        class="sconto absolute">
+                    <div class="sconto absolute">
                         badgesRedvalue*
                     </div>
 
-                    <div
-                        v-if="badgesGreenValue === 'Sostenibilità'"
-                        class="sostenibile absolute">
-                        Sostenibile
+                    <div class="sostenibile absolute">
+                        Sostenibile*
                     </div>
                 </div>
 
