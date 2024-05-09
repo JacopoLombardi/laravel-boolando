@@ -5,7 +5,7 @@
 @section('content')
 
 <section class="flex">
-    <div class="flex">
+
 
         <div class="card">
             <div class="card-inside">
@@ -23,24 +23,24 @@
 
 
                     <div class="sconto absolute">
-                        badgesRedvalue*
+                        20%
                     </div>
 
                     <div class="sostenibile absolute">
-                        Sostenibile*
+                        Sostenibile
                     </div>
                 </div>
 
-               <div class="under">
-                  <p>brand*</p>
-                  <h2>name*</h2>
-                  <p class="price"> price* &euro;</p>
-               </div>
+                <div class="under">
+                    <p>Levi's</p>
+                    <h2>Relaxed Fit</h2>
+                    <p class="price"> 29.99 &euro;</p>
+                </div>
 
             </div>
-         </div>
+        </div>
 
-    </div>
+
   </section>
 
 @endsection
